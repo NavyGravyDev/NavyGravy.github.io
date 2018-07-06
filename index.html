@@ -18,13 +18,12 @@
         var audio = new Audio('https://nickdogas.weebly.com/uploads/5/4/9/7/54970073/pow.wav');
           
         var anchor = new Image;
+        anchor.onload = function() { ctx.drawImage(anchor, (c.width / 2.65), (c.height / 4)); } 
         anchor.src = "https://i.imgur.com/KaMcyhN.png";
           
         var gravy = new Image;
         gravy.src = "https://i.imgur.com/uzsnADJ.png";
           
-        ctx.drawImage(anchor, (c.width / 2.65), (c.height / 4));
-                            
         function showCoords(event) {
             sauce++;
             ctx.clearRect(0, 0, 350, 100);
