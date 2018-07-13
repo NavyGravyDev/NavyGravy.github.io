@@ -9,30 +9,7 @@
   </canvas>
       
       <script>
-        var c = document.getElementById("c");
-        c.width = window.innerWidth;
-        c.height = window.innerHeight;
-        var ctx = c.getContext("2d");
-        var sauce = 0;
-          
-        var audio = new Audio('https://nickdogas.weebly.com/uploads/5/4/9/7/54970073/pow.wav');
-          
-        var anchor = new Image;
-        anchor.onload = function() { ctx.drawImage(anchor, (c.width / 2.65), (c.height / 4)); } 
-        anchor.src = "https://i.imgur.com/KaMcyhN.png";
-          
-        var gravy = new Image;
-        gravy.src = "https://i.imgur.com/uzsnADJ.png";
-          
-        function showCoords(event) {
-            sauce++;
-            ctx.clearRect(0, 0, 350, 100);
-            ctx.drawImage(gravy, (event.clientX - 37.5), (event.clientY - 37.5));
-            ctx.font = "50px Arial";
-            ctx.fillText(("sauce" + sauce), 50, 50);
-            audio.play();
-        }
-          
+        var _0x1bc3=['font','50px\x20Arial','sauce','play','width','innerWidth','height','innerHeight','getContext','https://nickdogas.weebly.com/uploads/5/4/9/7/54970073/pow.wav','onload','drawImage','src','https://i.imgur.com/KaMcyhN.png','https://i.imgur.com/uzsnADJ.png','clearRect','clientX','clientY'];(function(_0x52e306,_0x4dd1b5){var _0x441e5c=function(_0x21b17f){while(--_0x21b17f){_0x52e306['push'](_0x52e306['shift']());}};_0x441e5c(++_0x4dd1b5);}(_0x1bc3,0x148));var _0x5454=function(_0x25bb04,_0x28cd93){_0x25bb04=_0x25bb04-0x0;var _0x3075d=_0x1bc3[_0x25bb04];return _0x3075d;};var c=document['getElementById']('c');c[_0x5454('0x0')]=window[_0x5454('0x1')];c[_0x5454('0x2')]=window[_0x5454('0x3')];var ctx=c[_0x5454('0x4')]('2d');var sauce=0x0;var audio=new Audio(_0x5454('0x5'));var anchor=new Image();anchor[_0x5454('0x6')]=function(){ctx[_0x5454('0x7')](anchor,c[_0x5454('0x0')]/2.65,c[_0x5454('0x2')]/0x4);};anchor[_0x5454('0x8')]=_0x5454('0x9');var gravy=new Image();gravy['src']=_0x5454('0xa');function showCoords(_0x84a90e){sauce++;ctx[_0x5454('0xb')](0x0,0x0,0x15e,0x64);ctx[_0x5454('0x7')](gravy,_0x84a90e[_0x5454('0xc')]-37.5,_0x84a90e[_0x5454('0xd')]-37.5);ctx[_0x5454('0xe')]=_0x5454('0xf');ctx['fillText'](_0x5454('0x10')+sauce,0x32,0x32);audio[_0x5454('0x11')]();}
       </script>
       
   </body>
